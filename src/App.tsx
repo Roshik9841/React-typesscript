@@ -5,7 +5,8 @@ import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Heading } from "./components/Heading";
 import { Oscar } from "./components/Oscar";
-
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
 function App() {
   const name = "Roshik";
   const messageCount = 20;
@@ -33,6 +34,10 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Dicaprio</Heading>
       </Oscar>
+      <Button handleClick= {(event,id)=>{
+        console.log("BUtton clicked",event);
+      }}/>
+      <Input value='aasd' handleChange={(event)=>console.log(event)}/>
     </div>
   );
 }
