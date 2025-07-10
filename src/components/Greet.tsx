@@ -1,6 +1,6 @@
 type GreetProps = {
     name:string;
-    messageCount : number;
+    messageCount?: number;  //question marks le optional hunxa
     isLoggedIn : boolean;
 }
 
