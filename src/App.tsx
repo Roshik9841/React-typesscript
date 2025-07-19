@@ -6,6 +6,9 @@ import "./App.css";
 
 import { ThemeContextProvider } from "./components/Context/ThemeContext";
 import { Box } from "./components/Context/Box";
+
+import { UserContextProvider } from "./components/Context/UserContext";
+import { User } from "./components/Context/User";
 function App() {
   return (
     <div className="App">
@@ -16,6 +19,10 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User/>
+      </UserContextProvider>
     </div>
   );
 }
