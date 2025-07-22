@@ -9,6 +9,9 @@ import { Box } from "./components/Context/Box";
 
 import { UserContextProvider } from "./components/Context/UserContext";
 import { User } from "./components/Context/User";
+
+import { DemoRef } from "./components/ref/DemoRef";
+import { MutableRef } from "./components/ref/MutableRef";
 function App() {
   return (
     <div className="App">
@@ -23,6 +26,9 @@ function App() {
       <UserContextProvider>
         <User/>
       </UserContextProvider>
+
+      <DemoRef/>
+      <MutableRef/>
     </div>
   );
 }
